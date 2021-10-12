@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивная верстка страницы с использованием flex</title>
+    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+</head>
+
+<body>
+    <div class="maket"><a class="maket__link" href="maket.html">Макет</a></div>
+    <nav class="nav">
+        <span class="nav__logo">logo</span>
+        <ul class="nav__nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+        </ul>
+        <button class="button nav__button" type="button" onclick="window.location.href='finder.html'">get
+            finder</button>
+    </nav>
+
+    <main class="main">
+        <section class="intro">
+            <div class="intro__card-container">
+                <div class="intro__card">
+                    <h1 class="intro__h1">Find a gift for your wife or girlfriend</h1>
+                    <p class="intro__p">Struggling to find a gift for your wife or girlfriend? No problem!</p>
+                    <button class="button intro__finder-button_colored" type="button"
+                        onclick="window.location.href='finder.html'">Find gift now</button>
+                </div>
+            </div>
+            <img class="intro__image" src="./img/present.png" alt="high joy">
+            <img class="intro__image" src="./img/hww.png" alt="thanks">
+            <div class="intro__card-container">
+                <div class="intro__card">
+                    <h2 class="intro__h2">How we work</h2>
+                    <p class="intro__p">We’ve actually already asked hundreds of women what they want, and made a
+                        database with the results. All you have to do
+                        is take our short survey that only takes seconds, and our proprietary algorithm will match you
+                        with a few perfect gift
+                        options.</p>
+                    <button class="button intro__finder-button" type="button"
+                        onclick="window.location.href='finder.html'">Learn more</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2 class="intro__h2 categories__h2">Gifts for all Occasions</h2>
+            <p class="intro__p categories__p">“Try our web app to find the best gifts for all occasions”</p>
+            <div class="card">
+                <img class="card__img" src="./img/Birthday.png" alt="Birthday">
+                <div class="card__description">
+                    <h3 class="intro__p card__h3">Birthday</h3>
+                    <a class="card__more" href="finder.html#Birthday">See More ></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="./img/Anniversary.png" alt="Anniversary">
+                <div class="card__description">
+                    <h3 class="intro__p card__h3">Anniversary</h3>
+                    <a class="card__more" href="finder.html#Anniversary">See More ></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="./img/Valentines.png" alt="Valentine`s Day">
+                <div class="card__description">
+                    <h3 class="intro__p card__h3">Valentine`s Day</h3>
+                    <a class="card__more" href="finder.html#Valentines">See More ></a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card__img" src="./img/Cristmas.png" alt="Cristmas">
+                <div class="card__description">
+                    <h3 class="intro__p card__h3">Cristmas</h3>
+                    <a class="card__more" href="finder.html#Cristmas">See More ></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta__headers-block">
+                <h2 class="cta__h2">Ready to get started?</h2>
+                <h2 class="cta__h2 cta__h2_weight_normal">Sign up or contact us</h2>
+            </div>
+            <div class="cta__buttons-block">
+                <button class="button cta__button cta__button_back-color_black" type="button"
+                    onclick="window.location.href='finder.html'">find gift
+                    now
+                </button>
+                <button class="button cta__button cta__button_back-color_theme-color" type="button"
+                    onclick="window.location.href='finder.html'">how it
+                    works
+                </button>
+            </div>
+        </section>
+
+        <section class="blog-container">
+            <div class="blog-header">
+                <h2 class="cta_h2 blog-header__h2">Our Best Blogs Ever</h2>
+                <p class="intro__p blog-header__p">“Try our blog to find the best tips and tricks to select your gift”
+                </p>
+            </div>
+            <div class="blog">
+                <div class="blog-main-card">
+                    <img class="blog-main-card__img" src="./img/BlogMainCard.png" alt="Happy pare">
+                    <div class="blog-main-card__text">
+                        <p class="blog-main-card__p">Mr. John Doe</p>
+                        <h2 class="blog-main-card__h2">The best way to wish your wife</h2>
+                        <a class="blog-main-card__a" href="blog.html">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card-container">
+                    <div class="blog-card">
+                        <h2 class="blog-card__h2">Database to find the gifts for your girlfriend</h2>
+                        <p class="blog-card__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore...</p>
+                        <a class="blog-card__a" href="blog.html">Read More</a>
+                    </div>
+                    <div class="blog-card">
+                        <h2 class="blog-card__h2">How Artificial Intelligence read your mind to find the best gift</h2>
+                        <p class="blog-card__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore...</p>
+                        <a class="blog-card__a" href="blog.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-links-container">
+            <div class="footer-links">
+                <a class="footer-links__a" href="index.html">Home</a>
+                <a class="footer-links__a" href="about.html">About</a>
+            </div>
+            <div class="footer-logo"><span class="nav__logo footer__logo">logo</span></div>
+            <div class="footer-links">
+                <a class="footer-links__a" href="services.html">Services</a>
+                <a class="footer-links__a" href="blog.html">Blog</a>
+            </div>
+        </div>
+        <div class="footer-social-links">
+            <a href="https://facebook.com"><span class="iconify" data-icon="entypo-social:facebook-with-circle"
+                    style="font-size: 40px;"></span></a>
+            <a href="https://twitter.com"><span class="iconify" data-icon="entypo-social:twitter-with-circle"
+                    style="font-size: 40px;"></span></a>
+            <a href="https://instagram.com"><span class="iconify" data-icon="entypo-social:instagram-with-circle"
+                    style="font-size: 40px;"></span></a>
+            <a href="https://youtube.com"><span class="iconify" data-icon="entypo-social:youtube-with-circle"
+                    style="font-size: 40px;"></span></a>
+            <a href="https://pinterest.com"><span class="iconify" data-icon="entypo-social:pinterest-with-circle"
+                    style="font-size: 40px;"></span></a>
+        </div>
+        <div class="footer-copyright">
+            <span class="footer-copyright__text">&copy 2010 - 2020</span>
+            <span class="footer-copyright__text"><a href="about.html#privacy">Privacy - Terms</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
